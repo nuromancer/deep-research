@@ -103,7 +103,8 @@ OPENAI_KEY="your_openai_key"
 ```
 
 To use local LLM, comment out `OPENAI_KEY` and instead uncomment `OPENAI_ENDPOINT` and `OPENAI_MODEL`:
-- Set `OPENAI_ENDPOINT` to the address of your local server (eg."http://localhost:1234/v1")
+
+- Set `OPENAI_ENDPOINT` to the address of your local server (eg."<http://localhost:1234/v1>")
 - Set `OPENAI_MODEL` to the name of the model loaded in your local server.
 
 ### Docker
@@ -120,8 +121,9 @@ docker compose up -d
 ```
 
 5. Execute `npm run docker` in the docker service:
+
 ```bash
-docker exec -it deep-research npm run docker
+docker-compose exec deep-research npm run start
 ```
 
 ## Usage
